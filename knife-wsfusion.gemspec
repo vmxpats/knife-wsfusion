@@ -11,6 +11,7 @@ Gem::Specification.new do |s|
     s.email = "chipx86@chipx86.com"
     s.files = Dir["lib/**/*"]
     s.rubygems_version = "1.6.2"
+    s.homepage = "https://github.com/chipx86/knife-wsfusion"
 
-    s.add_dependency("chef", [">= 0.10.0"])
+    s.add_dependency("chef", [">= 0.11.0"])
 end
