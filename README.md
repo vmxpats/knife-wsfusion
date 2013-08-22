@@ -30,11 +30,21 @@ to download the
 [Workstation Tech Preview](https://communities.vmware.com/community/vmtn/beta/workstation_2013) or
 [Fusion Tech Preview](https://communities.vmware.com/community/vmtn/beta/fusion_2013).
 
-You will also need to create a VM that you will use as a base for your server.
-A good, freshly installed Linux VM (say, Ubuntu Server, or CentOS) is your best
-bet. Don't worry about installing much on it yet. However, you will need to
-configure a user with sudo permissions to log into, and you'll need a Chef
-Knife bootstrap template file that's compatible. Standard Chef stuff.
+
+Getting your template VM ready
+------------------------------
+
+You will need to create a VM that you will use as a base for your server.  A
+good, freshly installed Linux VM (say, Ubuntu Server, or CentOS) is your best
+bet. You'll need the following on it:
+
+  1. A user with sudo permissions to log into.
+  2. SSH access enabled.
+  3. VMware Tools installed.
+  4. A Chef Knife bootstrap template file that's compatible.
+
+That's it. Power it off once it's set up, and don't touch it again. It's a
+template now.
 
 All set up? Good, let's begin playing with knives.
 
@@ -46,13 +56,13 @@ To install knife-wsfusion, run:
 
     $ gem install knife-wsfusion
 
-You may have to put "sudo" in front of that, depending on your setup.
+You may have to put ```sudo``` in front of that, depending on your setup.
 
 Verify that worked with:
 
     $ knife --help | grep wsfusion
 
-You should see "knife wsfusion create". I'm going to assume that worked.
+You should see ```knife wsfusion create```. I'm going to assume that worked.
 
 
 Creating your first deployment
@@ -101,14 +111,15 @@ Awesome, yes?
 I'm lazy, give me a test repository
 -----------------------------------
 
-No problem. I built a sample JUST FOR YOU at
-chipx86/knife-wsfusion-wordpress-demo.
+No problem. I built a
+[demo repository](https://github.com/chipx86/knife-wsfusion-wordpress-demo)
+JUST FOR YOU.
 
 Follow the instructions there.
 
 
-It all went horribly wrong!!!
------------------------------
+Eep! It all went horribly wrong!!!
+----------------------------------
 
 If you're reading this, and the subject accurately reflects your mental state
 after my instructions, then somehow, your setup and my setup are not 100%
