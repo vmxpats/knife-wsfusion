@@ -3,8 +3,8 @@ Chef Knife plugin for Workstation/Fusion
 
 Chef is a fantastic system for maintaining server configurations, but it had
 one fatal flaw... It didn't work seamlessly with
-[VMware Workstation](http://www.vmware.com/products/workstation) or
-[Fusion](http://www.vmware.com/products/fusion/overview.html)!
+[VMware Workstation](https://www.vmware.com/products/workstation) or
+[Fusion](https://www.vmware.com/products/fusion/overview.html)!
 The humanity! This had to be fixed.
 
 
@@ -18,17 +18,14 @@ Workstation/Fusion VM, which it will happily create for you, based on a
 template VM you provide.
 
 It works with Chef Server, so install that or sign up for
-[Hosted Chef](http://www.opscode.com/enterprise-chef/) (it's free for up to 5
+[Hosted Chef](https://getchef.opscode.com/signup) (it's free for up to 5
 nodes!).
 
 You'll need a modern Chef. This is tested with Chef 11.4.4. So, something like
 that, or newer.
 
 You will need the very latest major version of Workstation > 9.0, or Fusion >
-5.0. As of August 21, 2013, these are Tech Preview versions. You'll want
-to download the
-[Workstation Tech Preview](https://communities.vmware.com/community/vmtn/beta/workstation_2013) or
-[Fusion Tech Preview](https://communities.vmware.com/community/vmtn/beta/fusion_2013).
+5.0.
 
 
 Getting your template VM ready
@@ -112,7 +109,7 @@ I'm lazy, give me a test repository
 -----------------------------------
 
 No problem. I built a
-[demo repository](https://github.com/chipx86/knife-wsfusion-wordpress-demo)
+[demo repository](https://github.com/vmxpats/knife-wsfusion-wordpress-demo)
 JUST FOR YOU.
 
 Follow the instructions there.
